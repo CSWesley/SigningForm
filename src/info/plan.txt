@@ -59,3 +59,11 @@ Other Needs ->
         Explanation:
             The 'INSERT INTO' keyword 'inserts' information into the 'name of table' and you specify the parameters of the table, which is the stuff in parenthesis ().
             The 'VALUES' keyword specifies what you are entering into the table. For this project, it will be the username and password entered in sign up form.
+
+Schedule:
+    Video 1: Making the Form GUI Part 1
+    Video 2: Making the Form GUI Part 2
+    Video 3: Setting up SQL
+    video 4: Working with SQL
+
+    Note that these video orders are not 100% correct and there may be changes.
