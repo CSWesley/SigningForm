@@ -18,6 +18,7 @@ Structure ->
 
 Other Needs ->
     • When "Sign up" confirm button is clicked ->
+        add slide thing
         a) Check in SQL database if username already is taken (if it exists)
             if yes:
                 Send message telling user to pick a different username.
@@ -26,6 +27,7 @@ Other Needs ->
                 Send message telling user that their account was created.
 
     • When "Login" confirm button is clicked ->
+        add slide thing
         a) Check in SQL database if the username entered has a matching password keyed to it.
             if yes:
                 Successfully logged in!
