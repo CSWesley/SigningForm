@@ -55,7 +55,7 @@ public class MainPage {
     public void showSignup(Container c) {
 
         Signup signup = new Signup();
-        signup.setSignupInfo(c);
+        signup.setSignupInfo(c, mainFrame);
 
     }
 

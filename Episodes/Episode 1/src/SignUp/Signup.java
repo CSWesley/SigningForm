@@ -5,7 +5,7 @@ import java.awt.*;
 
 public class Signup {
 
-    public void setSignupInfo(Container c) {
+    public void setSignupInfo(Container c, JFrame frame) {
 
         JTextField username = new JTextField();
         username.setText("Username");
@@ -27,6 +27,8 @@ public class Signup {
         dob.setSize(120, 35);
         dob.setLocation(200, 185);
         c.add(dob);
+
+        frame.setVisible(true);
 
     }
 }
