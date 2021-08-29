@@ -16,7 +16,6 @@ Structure ->
 
 Other Needs ->
     • When "Sign up" confirm button is clicked ->
-        add slide thing
         a) Check in SQL database if username already is taken (if it exists)
             if yes:
                 Send message telling user to pick a different username.
@@ -25,12 +24,16 @@ Other Needs ->
                 Send message telling user that their account was created.
 
     • When "Login" confirm button is clicked ->
-        add slide thing
         a) Check in SQL database if the username entered has a matching password keyed to it.
             if yes:
                 Successfully logged in!
             if no:
                 Username or password was entered incorrectly.
+
+        When signup/login button is pressed, we have another frame that has the main application.
+        In this frame, we will have the option to update your username or password.
+        Normally, you would think of some way to confirm their identity with a 'forgot password' button,
+        but we don't have this. I'm adding this so you can use it in a more structured way in the future.
 
     • Username, password, and DOB can't be blank.
     • Don't need to log DOB in database because we will check at sign up if user is 13+
@@ -59,6 +62,23 @@ Other Needs ->
         Explanation:
             The 'INSERT INTO' keyword 'inserts' information into the 'name of table' and you specify the parameters of the table, which is the stuff in parenthesis ().
             The 'VALUES' keyword specifies what you are entering into the table. For this project, it will be the username and password entered in sign up form.
+
+    To update a username or password ->
+        Operation:
+            UPDATE {name of table} SET password=12345 WHERE username='John';
+        Explanation:
+            This SQL statement would set the password to '12345' only if that is keyed to the username 'John'.
+
+    To delete an account ->
+        Note we just delete the username and password.
+        Operation:
+            DELETE FROM {name of table} WHERE username='John' AND password='12345';
+        Explanation:
+            This deletes a username called 'John' and a password called '12345'.
+
+    To check if something exists in a database ->
+        This is executed with Java code.
+
 
 Schedule:
     Later...
